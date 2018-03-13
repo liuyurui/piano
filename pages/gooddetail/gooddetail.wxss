@@ -1,0 +1,23 @@
+/* pages/gooddetail/gooddetail.wxss */
+page {
+  height: 100%;
+}
+.container {
+  background-color: yellow;
+  height: 100%;
+}
+
+.banner {
+  width: 750rpx;
+  height: 570rpx;
+}
+
+.title_area {
+  height: 152rpx;
+  background-color: red;
+}
+
+.desc_area{
+  height: 70rpx;
+  background-color: green;
+}

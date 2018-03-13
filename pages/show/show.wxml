@@ -1,0 +1,17 @@
+<!--pages/show/show.wxml-->
+<view class='container'>
+  <view class='video_area'>
+    <video src='http://zhiyinpiano.oss-cn-beijing.aliyuncs.com/video/1520223414636.mp4' loop custom-cache='{{false}}'></video>
+  </view>
+
+  <view class='item' bindtap='showMore' wx:for='{{showitems}}' wx:for-item='display' data-src='{{display.images}}'>
+    <view class='item_bg'>
+      <text class='sub_title'>{{display.title}}</text>
+      <text class='item_desc'>{{display.desc}}</text>
+      <text class='open_more'>查看图册</text>
+    </view>
+    <view class='item_image'>
+      <image src='{{display.cover}}' mode='aspectFill'></image>
+    </view>
+  </view>
+</view>

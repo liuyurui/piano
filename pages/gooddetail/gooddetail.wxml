@@ -1,0 +1,11 @@
+<!--pages/gooddetail/gooddetail.wxml-->
+<view class='container'>
+  <view class='banner' >
+    <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2076727592,2040020576&fm=27&gp=0.jpg' mode='widthFix'></image>
+  </view>
+  <view class='title_area'></view>
+  <view class='desc_area'></view>
+  <view>
+    <text>商品详情</text>
+  </view>
+</view>

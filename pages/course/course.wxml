@@ -1,0 +1,60 @@
+<!--pages/course/course.wxml-->
+<view class='container'>
+  <view class="type-container">
+    <scroll-view class="type-navbar" scroll-x="true">
+      <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
+        <view id="{{index}}" class="type-navbar-item {{currentPosition == index ? 'type-item-on' : ''}}" bindtap="tabClick">
+          {{item}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <swiper class='swip_box' bindchange='swipChange' current='{{currentPosition}}'>
+    <swiper-item wx:for='{{categories}}'>
+      <block>
+        <view class="category_area {{index == 0 ? 'type-item-long' : ''}}">
+          <text class='category'>{{item}}课程介绍</text>
+        </view>
+        <block wx:if='{{index == 0}}'>
+          <text class='intro'>拨弦和按弦的基本姿势、每日基础练习、和弦弹奏与扫弦、和弦浅谈、左右手技巧的跟进、半音阶练习、分解和弦练习、大横按技巧、扫弦技巧、圆滑音训练、拨片 训练方法与技巧、切音的技巧、和弦记忆方法、技巧的综合应用。\n和弦构成解析、封闭和弦推导法、滑音、拍弦、制音、各种音的推弦、转调时和弦的运用、不同调中和弦的级数、和弦编配的基本理论、和弦套路、技巧的综合应用。</text>
+          <view class='sub_title_area'>
+            <text class='sub_title'>授课方式：</text>
+            <text class='sub_desc'>一对一，一对多</text>
+          </view>
+        </block>
+        <block wx:elif='{{index == 1}}'>
+          <text class='intro'>基础班\n1.认识五线谱，姿势，手型。\n2.弹奏初级练习曲和乐曲，培养双手协调能力。\n3.八分音符，附点音符的乐曲练习。\n4.认识音阶，练习c大调音阶。\n\n提高班：\n1.哈农指法练习 锻炼手指力度以及独立性。\n2.钢琴基础教程代表曲目包含车尔尼，拜厄等古典练习曲。\n3.练习各种复杂的节奏型，加强节奏感。</text>
+          <view class='sub_title_area'>
+            <text class='sub_title'>授课方式：</text>
+            <text class='sub_desc'>一对一</text>
+          </view>
+        </block>
+        <block wx:elif='{{index == 2}}'>
+          <text class='intro'>第一阶段：初步掌握正确的演奏姿势、手型和基本指法（如：托、劈、抹、勾、大撮、小撮、按音、花指、揉弦、上滑音、下滑音等）弹奏技法。掌握最基本的节奏型、用指规律以及简单的左右手配合的小乐曲。\n\n第二阶段：弹奏方法、手型、基本指法进一步熟练和提高，注重手指灵活性的训练，加强左手弹奏方面的练习。\n\n第三阶段：注重出音的音色、弹性及手指的独立性的训练，初步掌握琶音、摇指的正确弹奏要领，加强较音能力的培养。\n\n第四阶段：进一步掌握琶音、分解和弦技法的正确弹奏要领，强调手指的独立性和重心转换以及重心转换时自然过渡的训练。加强各种节奏和速度方面的练习。加强视奏能力的提高和训练。</text>
+          <view class='sub_title_area'>
+            <text class='sub_title'>授课方式：</text>
+            <text class='sub_desc'>一对一，一对多</text>
+          </view>
+        </block>
+        <block wx:elif='{{index == 3}}'>
+          <text class='intro'>一、巩固二胡的演奏姿势。\n二、二胡右手的主要技巧。\n在运弓及发音、长弓与换弓、半弓与短弓、换弦
+三、二胡左手的主要技巧。学习按弦与发音、音准与指距、指序与保留指。\n四、左右手技法在练习曲及乐曲中的配合应用，掌握例如《田园春色》《玛依拉》、《红星歌》、《山清水秀好风光、《西藏舞曲》等小作品。\n\n中级班\n一、快慢强弱的掌控的基础上加入甩弓、抖弓的教学。\n二、学习按弦与发音、音准与指距、指序与保留指、揉弦的种类、颤音的种类、把位与换把这些基本技能的基础上，通过对微小肌肉的科学训练，加强控制左右手的平衡。\n三、掌握《小花鼓》、《长音练习曲》、《绣金匾》、《赛马》、《良宵》等中级作品。\n\n中高级班\n一、《胡琴家族》练习曲5到12 快弓换弦练习 降B调上把音准校正联系。\n二、掌握《赞歌》、《翻身歌》、《喜送公粮》、《奔驰在千里草原》、《江河水》、《空山鸟语》、《月夜》等中高级作品。</text>
+          <view class='sub_title_area'>
+            <text class='sub_title'>授课方式：</text>
+            <text class='sub_desc'>一对一，一对多</text>
+          </view>
+        </block>
+        <block wx:elif='{{index == 4}}'>
+          <text class='intro'>竹笛，是属于中国的民族乐器吹奏乐器的一种，适合6周岁以上的葫芦丝爱好者。\n1.演奏姿势\n2.吹奏嘴型​\n3.识谱课程\n4.基本技巧学习\n5.歌曲教学​</text>
+          <view class='sub_title_area'>
+            <text class='sub_title'>授课方式：</text>
+            <text class='sub_desc'>一对一，一对多</text>
+          </view>
+        </block>
+        <block wx:else>
+          <text class='intro'>本琴行还设有 架子鼓 、尤克里里 、小提琴、萨克斯、葫芦丝课程。</text>
+        </block>
+      </block>
+    </swiper-item>
+  </swiper>
+</view>

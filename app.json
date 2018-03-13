@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/gooddetail/gooddetail",
+    "pages/home/home",
+    "pages/shop/shop",
+    "pages/course/course",
+    "pages/show/show",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/bar_shop_press.png",
+        "selectedIconPath": "images/bar_shop_press.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "门店信息",
+        "iconPath": "images/bar_shop.png",
+        "selectedIconPath": "images/bar_shop_press.png"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "效果展示",
+        "iconPath": "images/bar_result.png",
+        "selectedIconPath": "images/bar_result_press.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程介绍",
+        "iconPath": "images/bar_course.png",
+        "selectedIconPath": "images/bar_course_press.png"
+      }
+    ],
+    "color": "#a6b0bd",
+    "selectedColor": "#333333"
+  }
+}
