@@ -5,8 +5,8 @@
   <view class="type-container">
     <scroll-view class="type-navbar" scroll-x="true">
       <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
-        <view id="{{index}}" class="type-navbar-item {{currentPosition == index ? 'type-item-on' : ''}}" bindtap="tabClick">
-          {{item}}
+        <view id="{{index}}" class="type-navbar-item {{currentPosition == index ? 'type-item-on' : ''}}" bindtap="tabClick" data-tag='{{item.tag}}'>
+          {{item.name}}
         </view>
       </view>
     </scroll-view>
@@ -16,10 +16,9 @@
     <view class='good_box' wx:for='{{goods_list}}' bindtap='clickGood'>
       <image src='{{item.url}}' mode='aspectFill'></image>
       <view>
-        <text class='good_title'>卢森（Rosen） 卢森Rosen吉他民谣木吉它40寸41寸初学者乐器guitar R-135黑色 41寸</text>
+        <text class='good_title'>{{item.title}}</text>
         <view class='good_price_buy'>
-          <text class='good_price'>￥233.00</text>
-          <text class='good_buy'>购买</text>
+          <text class='good_price'>{{item.price}}</text>
         </view>
       </view>
     </view>

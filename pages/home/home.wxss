@@ -76,17 +76,6 @@ page {
   position: relative;
   max-height: 80rpx;
 }
-.good_buy {
-  position: absolute;
-  width: 100rpx;
-  height: 45rpx;
-  border: 1px solid #ff153c;
-  text-align: center;
-  right: 20rpx;
-  top: 10rpx;
-  font-size: 30rpx;
-  color: #ff153c;
-}
 .good_price {
   position: absolute;
   width: 100rpx;

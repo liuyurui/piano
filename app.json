@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/gooddetail/gooddetail",
     "pages/home/home",
     "pages/shop/shop",
     "pages/course/course",
     "pages/show/show",
+    "pages/gooddetail/gooddetail",
     "pages/logs/logs"
   ],
   "window": {
